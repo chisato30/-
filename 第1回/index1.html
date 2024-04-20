@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あいうえお</title>
+    <link rel="stylesheet" href="./css/style1.css">
+</head>
+<body>
+<!--boxの背景色は以下、外側から表示 -->
+<!-- 表示しないが位置関係を目的に親要素を設定 -->
+<div id="base">
+<!-- 背景が緑色 -->
+    <div id="green">
+<!-- 背景がオレンジ色 -->    
+        <div id="orange">
+<!--　背景は青色  -->
+            <div id="blue">あいうえお</div>
+<!-- 背景は黄色 -->
+            <div id="yellow">かきくけこ</div>
+        </div>   
+    </div>
+</div>
+</body>
+</html>
+<!-- boxの配置は一番外側（親）となるタブにposition: relative
+その中に位置させたい子にposition: absoluteを書く。
+親と子の位置関係は、子の位置を親の位置を中心に設定（＜上下左右：top上,bottom下,right右,left左＞＜距離（例）10px etc...＞する。
+注意！子が多数あるときのabsoluteの優先順位は、外側が基準となる。
+例）親、子１、子２、子３
+前提条件：子２が子１より内側にあるとする。
+子２の配置は、子１が親となり、親の位置を中心に子２の位置を設定（＜上下左右：top上,bottom下,right右,left左＞＜距離（例）10px etc...＞する。　-->
+

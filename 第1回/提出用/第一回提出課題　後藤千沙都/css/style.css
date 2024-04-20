@@ -1,0 +1,74 @@
+/*----- リセットcss-----*/
+*{
+margin: 0;
+padding: 0;
+}
+
+/*----- header -----*/
+header{
+    background-color: #308ce24d;
+    padding: 12px 0px;
+    position: fixed;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+ li:hover{
+    opacity: 0.5;
+} 
+
+.navigation_var{
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0px 8px;
+}
+
+ .navigation_var #navigation_left{
+    margin-right: auto;
+}
+
+.navigation_var #navigation_left:hover{
+    opacity: 0.5;
+} 
+
+.navigation_var ul{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+
+}
+
+/*----- main -----*/
+.background{
+    background-image: url("../image/sky_cloud.png");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background.background_position{
+    position: relative;
+}
+
+.background_position p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 40px;
+    word-break: keep-all;
+}
